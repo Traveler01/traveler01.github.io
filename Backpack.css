@@ -1,0 +1,52 @@
+h1 {
+    font-size: 80px;
+    text-align: center; 
+    font-family: Stencil Std, fantasy; /*this title should have a border*/
+    color:white;
+}
+
+body {
+    background-size:1650px;
+    background-image: url("http://az616578.vo.msecnd.net/files/2016/04/21/635968670275548061-148457385_3001465-poster-942-jagged-career-path-new-york-times-travel-writer-seth-kugel.jpg");
+    /*https://fortissima.com.br/wp-content/uploads/2015/08/como_arrumar_a_mala1_shutterstock-tt-width-500-height-420-bgcolor-FFFFFF.jpg*/ 
+    background-attachment: scroll; /* default */
+}
+#map {
+     border: 600px; /*fix this with border around the map*/
+     margin:auto;
+
+}
+
+p {
+    font-size: 30px; 
+    color: darkred;
+    font-family:FreeMono, monospace;
+    text-align: center; 
+}
+
+h3 {
+    font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+	font-size: 50px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 15.4px;
+} 
+
+#different {
+    font-size:20px;
+    color:darkred;
+    text-align:center;
+    font-family: Rockwell;
+    
+}
+
+ul {
+font-family:Rockwell;
+font-size: 20;
+}
+
+h2 {
+    text-align: center;
+    color: midnightblue;
+}

@@ -1,0 +1,91 @@
+<DOCTYPE! html> 
+<html> 
+<head>
+    <title>Backpacking Without Boundaries</title>
+    <link rel="stylesheet" type="text/css" href="Backpack.css"> 
+    <meta charset=utf-8 />
+<title>Single marker</title>
+<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' />
+<style>
+  body { margin:0; padding:0; }
+  /*#map { position:absolute; top:0; bottom:0; width:100%; }*/
+  #map { 
+      width: 50%;
+      height: 500px;
+  }
+</style>
+<!--background picture that stays still-->
+</head>
+    <body> 
+<h1>Backpacking Without Boundaries</h1>
+    <p><b>About the Creator:</b> My name is Marilyn and I aspire to go backpacking around the world. However, 
+    sometimes thinking about traveling the <i>world</i> can be overwhelming. Now with this map I have created it is much easier to put all travel resources into one place.
+    Your dreams of traveling the world can come true with just a click of a button that takes you to the resources you need. 
+     </p>
+<h2> Click anywhere on the map that has a button icon and be taken to a list full of resources!</h2> 
+<!--insert map here with icons--> 
+<div id='map'></div>
+
+<script>
+L.mapbox.accessToken = 'pk.eyJ1IjoibHVjYXMwOTIyIiwiYSI6ImNqNWZpZ2RmMzBpNXcycW56ODdrYXdybmkifQ.UKkQqiYuVVF7YGYZBuuMKg'; 
+var map = L.mapbox.map('map', 'mapbox.streets')
+    .setView([51.509865, -0.118092], 16);
+//latitude,longitude//
+L.mapbox.featureLayer({
+    // this feature is in the GeoJSON format: see geojson.org
+    // for the full specification
+    type: 'Feature',
+    geometry: {
+        type: 'Point',
+        // coordinates here are in longitude, latitude order because
+        // x, y is the standard for GeoJSON and many formats
+        coordinates: [
+          -0.118092, //longitude
+          51.509865 //latitude
+        ]
+    },
+    properties: {
+        title: 'Peregrine Espresso',
+        description: '1718 14th St NW, Washington, DC',
+        // one can customize markers by adding simplestyle properties
+        // https://www.mapbox.com/guides/an-open-platform/#simplestyle
+        'marker-size': 'large',
+        'marker-color': '#BE9A6B',
+        'marker-symbol': 'suitcase'
+    }
+}).addTo(map);
+</script>
+<h3>Suggested Backpack materials</h3> 
+<ul>
+    <li>Sleeping bag</li>
+    <li>First aid kit</li>
+    <li><b>Appropriate and comtorable clothes:</b>regular pants,shorts, warm or regular one SWEATER (more about this ⇩) </li>
+    <li>Neck Pillow (inflatable is suggested)</li> 
+    <li>Compass/GPS/MAP (make sure you have a backup)</li>
+    <li>Food (more about this ⇩) </li>
+    <li>Water</li>
+    <li>Money</li>
+
+    </ul>
+
+<div id="different">
+    <p>Packing depends on where you want to go, so here is a list of the MOST important things you must need in your backpack</p> 
+    </div>
+
+    <h4>Extra Websites for needed backpacking materials</h4> 
+    <!--seperate into sections such as: Backpack Materials for the Cold, hot, rainy, or rural place--> 
+    <ul>
+        <li><a target="_blank" href="https://www.rei.com/learn/expert-advice/backpacking-checklist.html"> Backpacking Checklist</a></li>
+        <li><a target="_blank" href="https://www.travelocity.com/inspire/34-things-you-need-pack-backpacking-adventure/"> 34 Thinks You Need to Pack for a Backpacking </a></li>
+        <li><a target="_blank" href="https://www.rei.com/learn/expert-advice/loading-backpack.html"> How to Pack and Hoist a Backpack</a></li> 
+    </ul>
+<h4>What to Pack for Different Weathers</h4>
+    <ul>
+        <li><a target="_blank" href="https://sectionhiker.com/backpacking-gear-for-cold-wet-weathe/"> What backpacking Gear Should You Bring For Cold, Wet Weather?</a></li> 
+        <li><a target="_blank" href="https://www.neverendingvoyage.com/carry-on-only-packing-list-cold-weather/"> "How to Pack Carry-on for Cold Weather" And extra advice</a></li> 
+    </ul>
+    </body>
+
+</html>
